@@ -402,7 +402,7 @@ export default function CardioAIPage() {
         slope:    form.slope, 
         thal:     form.thal,
       };
-      const res = await fetch("http://127.0.0.1:5000/predict", {
+      const res = await fetch("https://heartguard-ml-vdfd.onrender.com/predict", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
